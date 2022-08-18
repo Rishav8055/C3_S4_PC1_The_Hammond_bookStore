@@ -2,12 +2,15 @@ package com.BookStore;
 
 public class BookIMPL {
     public static void main(String[] args) {
-       Book book = new Book("The Beast","BSI123","Comics",500);
-       book.setTitle("The Beast");
-       book.setIsbnNumber("BSI123");
-       book.setDescription("Comics");
-       book.setPrice(500);
-       book.displayBookDetail();
+
+       Author author = new Author("The Beast","ISBN123","Comics",500,"ABCD","link");
+       author.setTitle("The Beast");
+       author.setIsbnNumber("BSI123");
+       author.setDescription("Comics");
+       author.setPrice(500);
+       author.setAuthorName("rishav");
+       author.setAuthorPen("cello");
+       author.showBookDetail();
 
     }
 }

@@ -8,6 +8,13 @@ public class Author extends Book {
         super(title, isbnNumber, description, price);
         this.authorName = authorName;
         this.authorPen = authorPen;
+
+    }
+    public void showBookDetail(){
+        displayBookDetail();
+        System.out.println("Author Detail");
+        System.out.println("authorName = " + authorName);
+        System.out.println("authorPen = " + authorPen);
     }
 
     public String getAuthorName() {
@@ -26,6 +33,7 @@ public class Author extends Book {
         this.authorPen = authorPen;
     }
 
+
     @Override
     public String toString() {
         return "Author{" +
@@ -33,4 +41,5 @@ public class Author extends Book {
                 ", authorPen='" + authorPen + '\'' +
                 '}';
     }
+
 }
